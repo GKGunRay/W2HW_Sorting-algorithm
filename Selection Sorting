@@ -1,0 +1,23 @@
+#Selection Sorting
+def SelectionSort(arr):
+    i = 0
+    while i < len(arr):
+        selected_index = i
+        j = 1
+        while j < len(arr):
+            if arr[j] < arr[selected_index]:
+                selected_index = j
+            j += 1
+        arr[i], arr[selected_index] = arr[selected_index], arr[i]
+        print(arr)
+        print('-'*30)
+        i += 1
+    return arr
+
+if __name__ == '__main__':
+    import random
+    arr = list(range(15))
+    random.shuffle(a)
+    print(a)
+    arr = SelectionSort(a)
+    print(a)
