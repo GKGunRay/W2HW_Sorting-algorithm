@@ -10,3 +10,4 @@ def sequentoal_search(data, key):
 
 print(sequentoal_search(data, 17))
 print(sequentoal_search(data, 6))
+#Written 
