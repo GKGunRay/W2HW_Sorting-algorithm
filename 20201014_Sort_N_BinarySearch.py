@@ -38,7 +38,7 @@ def InsertionSort(arr):
     return arr
 
 data = []
-print("Please input number(s) for data for sorting:")
+print("Please input number(s) for data for sorting with using enter, without using spcae:")
 while True:
     ip = input()
     if ip != '':
@@ -50,10 +50,10 @@ data = InsertionSort(data)
 print("---"*10)
     
 targets = []
-print("Please input number(s) for searching in your data:")
+print("Please input number(s) for searching in your data with using enter, without using spcae:")
 while True:
     sch = input()
-    if sch != '':
+    if sch != '' and sch.isdigit():
         targets.append(int(sch))
     else:
         break
