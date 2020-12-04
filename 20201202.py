@@ -46,7 +46,6 @@ def fractional_backpack(goods, w):
     total_v = 0
     m = [0 for _ in range(len(goods))]
     for i, (weight, price, name) in enumerate(goods):
-        # 因為已依照最大價值重量比排列list，可以直接使用貪婪法
         if w >= weight:
             m[i] = 1
             w -= weight
