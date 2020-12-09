@@ -1,0 +1,11 @@
+d(S, T) = min{d(S, D) + d(D, T),
+	      d(S, B) + d(B, T),
+	      d(S, F) + d(F, T)}
+	= min{min{d(S, A) + d(A, D), d(S, B) + d(B, D)} + 1,
+	      2 + min{d(B, D) + d(D, T), d(B, T), d(B, F) + d(F, T)},
+	      min{d(S, C) + d(C, F), d(S, B) + d(B, F)} + 2}
+	= min{min{1 + 4, 2 + 11} + 1,
+	      2 + min{11 + 1, 13, 16 + 2},
+	      min{5 + 2, 2 + 16} + 2}
+	= min{5 + 1, 2 + 12, 7 + 2}
+	= 6
